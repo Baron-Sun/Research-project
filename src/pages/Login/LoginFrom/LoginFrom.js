@@ -34,7 +34,7 @@ class LoginForm extends Component {
       message.success('登陆成功')
       setTimeout(() => {
         setAuthUser(`${username}`)
-        this.props.history.push("/home");
+        this.props.history.push("/");
       }, 500)
 
     } else {

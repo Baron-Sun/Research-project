@@ -1,13 +1,13 @@
 {
   "files": {
     "index.css": "/static/css/index.cd966e83.chunk.css",
-    "index.js": "/static/js/index.1b45d8aa.chunk.js",
-    "index.js.map": "/static/js/index.1b45d8aa.chunk.js.map",
-    "runtime-index.js": "/static/js/runtime-index.1c947667.js",
-    "runtime-index.js.map": "/static/js/runtime-index.1c947667.js.map",
-    "static/css/2.04ff9426.chunk.css": "/static/css/2.04ff9426.chunk.css",
-    "static/js/2.27c48118.chunk.js": "/static/js/2.27c48118.chunk.js",
-    "static/js/2.27c48118.chunk.js.map": "/static/js/2.27c48118.chunk.js.map",
+    "index.js": "/static/js/index.f0c57ca1.chunk.js",
+    "index.js.map": "/static/js/index.f0c57ca1.chunk.js.map",
+    "runtime-index.js": "/static/js/runtime-index.58bdfcc0.js",
+    "runtime-index.js.map": "/static/js/runtime-index.58bdfcc0.js.map",
+    "static/css/2.42ec2a3e.chunk.css": "/static/css/2.42ec2a3e.chunk.css",
+    "static/js/2.1bf2c9ff.chunk.js": "/static/js/2.1bf2c9ff.chunk.js",
+    "static/js/2.1bf2c9ff.chunk.js.map": "/static/js/2.1bf2c9ff.chunk.js.map",
     "books/01/ar/14562.mp3": "/books/01/ar/14562.mp3",
     "books/01/ar/14567.mp3": "/books/01/ar/14567.mp3",
     "books/01/ar/14570.mp3": "/books/01/ar/14570.mp3",
@@ -2938,21 +2938,21 @@
     "books/06/index.html": "/books/06/index.html",
     "books/06/project.txt": "/books/06/project.txt",
     "index.html": "/index.html",
-    "precache-manifest.9c31aacc298cade5dfc1e9ec8e882ecf.js": "/precache-manifest.9c31aacc298cade5dfc1e9ec8e882ecf.js",
+    "precache-manifest.d670731dcbcea3193a52e3715c01c5c9.js": "/precache-manifest.d670731dcbcea3193a52e3715c01c5c9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.04ff9426.chunk.css.map": "/static/css/2.04ff9426.chunk.css.map",
+    "static/css/2.42ec2a3e.chunk.css.map": "/static/css/2.42ec2a3e.chunk.css.map",
     "static/css/index.cd966e83.chunk.css.map": "/static/css/index.cd966e83.chunk.css.map",
-    "static/js/2.27c48118.chunk.js.LICENSE.txt": "/static/js/2.27c48118.chunk.js.LICENSE.txt",
+    "static/js/2.1bf2c9ff.chunk.js.LICENSE.txt": "/static/js/2.1bf2c9ff.chunk.js.LICENSE.txt",
     "static/media/image.png": "/static/media/image.dd608d34.png",
     "static/media/imageDropShadow.png": "/static/media/imageDropShadow.4a439170.png"
   },
   "entrypoints": {
     "index": [
-      "static/js/runtime-index.1c947667.js",
-      "static/css/2.04ff9426.chunk.css",
-      "static/js/2.27c48118.chunk.js",
+      "static/js/runtime-index.58bdfcc0.js",
+      "static/css/2.42ec2a3e.chunk.css",
+      "static/js/2.1bf2c9ff.chunk.js",
       "static/css/index.cd966e83.chunk.css",
-      "static/js/index.1b45d8aa.chunk.js"
+      "static/js/index.f0c57ca1.chunk.js"
     ]
   }
 }

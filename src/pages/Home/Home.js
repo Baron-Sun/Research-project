@@ -10,7 +10,7 @@ import './Home.css'
 class BooksApp extends React.Component {
     state = {
         bookList: [],
-        visible: true,
+        visible: window.location.pathname === '/home' ? false : true,
         videoVisible: false
     }
 
@@ -63,6 +63,7 @@ class BooksApp extends React.Component {
 
     render() {
         const { bookList, visible, videoVisible } = this.state
+        console.log('visible', visible, window.location.pathname === '/home')
         return (
             <div className="home-books-results">
                 {(!videoVisible && !visible) && <Spin tip="加载中..." spinning={bookList.length > 0 ? false : true}>

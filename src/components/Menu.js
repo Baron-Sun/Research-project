@@ -13,12 +13,6 @@ const MenuComponent = (props) => {
                     Home
             </NavLink>
             </Menu.Item>
-            <Menu.Item key="order" >
-                <NavLink to="/" activeClassName="active">
-                    Order
-            </NavLink>
-            </Menu.Item>
-
         </Menu>
     );
 }

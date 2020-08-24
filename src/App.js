@@ -41,6 +41,7 @@ class App extends Component {
               :
               <Fragment>
                 <Switch>
+                  <Route path="/" exact component={Home} />
                   <Route path="/home" exact component={Home} />
                   <Route path="/iframe" component={IframePage} />
                 </Switch>
