@@ -43,8 +43,8 @@ class IframePage extends Component {
     const { isLoading, scale } = this.state;
     // 打平之后的菜单
     const query = this.props.location.query || {};
-    const { authUser } = this.props
-
+    const { url, bookId } = query;
+    const { authUser } = this.props;
     return (
       <div
         className="iframe-container"
@@ -79,7 +79,7 @@ class IframePage extends Component {
           title="外链"
           ref={el => (this.iframeEl = el)}
           allowtransparency="no"
-          src={`${query.url}?user=${authUser}`}
+          src={`${url}?user=${authUser}&bookId=${bookId}`}
           frameBorder="0"
           width={'100%'}
           height={'100%'}

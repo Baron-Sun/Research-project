@@ -8,6 +8,9 @@ const main = express.Router()
 
 main.get('/list', async (request, response) => {
 
+  let { bookId, userType } = request.session;
+  let books = config.userTypeMap[userType];
+
   let ret = {
     "success": true,
     "code": 200,
@@ -18,11 +21,14 @@ main.get('/list', async (request, response) => {
   const booksDir = path.resolve(__dirname, '..', 'build/books');
   var readDir = fs.readdirSync(booksDir);
 
-  const datas = readDir.map(e => ({
-    url: `/books/${e}/index.html`,
-    cover: `/books/${e}/cover.jpeg`,
+  console.log('bookId', bookId);
+  console.log('userType', userType);
+
+  const datas = readDir.filter(e => books.includes(e)).map((e, index) => ({
+    url: index <= bookId ? `/books/${e}/index.html` : '',
+    cover: index <= bookId ? `/books/${e}/cover.jpeg` : 'logo.png',
     title: e,
-    id: e,
+    id: index
   }))
 
   ret.data = datas

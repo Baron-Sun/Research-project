@@ -10,7 +10,15 @@ const Book = {
                 return response
             })
         return data
+    },
+    openBook: (params = {}) => {
+        let data = request.get(`/_api2/read/openBook`, params)
+            .then((response) => {
+                return response
+            })
+        return data
     }
+
 }
 
 export default Book

@@ -63,7 +63,6 @@ class BooksApp extends React.Component {
 
     render() {
         const { bookList, visible, videoVisible } = this.state
-        console.log('visible', visible, window.location.pathname === '/home')
         return (
             <div className="home-books-results">
                 {(!videoVisible && !visible) && <Spin tip="加载中..." spinning={bookList.length > 0 ? false : true}>

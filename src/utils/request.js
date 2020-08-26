@@ -17,6 +17,7 @@ const ajax = function (request) {
 
     var r = new XMLHttpRequest()
     r.open(request.method, request.url, true)
+    r.withCredentials = true;
     if (request.contentType !== undefined) {
         r.setRequestHeader('Content-Type', request.contentType)
     }

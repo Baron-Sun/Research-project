@@ -12,7 +12,7 @@ import {
   message
 } from 'antd';
 import { setAuthUser } from '../../../actions/authUser';
-
+import { updateUserBookId } from '../../../actions/users';
 
 class LoginForm extends Component {
   static propTypes = {
@@ -23,17 +23,18 @@ class LoginForm extends Component {
   };
   async handleSubmit(values) {
 
-    const { setAuthUser } = this.props;
+    const { setAuthUser, updateUserBookId } = this.props;
 
     const { username, password } = values
 
-    let { success } = await LoginService.post({ username, password })
+    let { success, detail = {} } = await LoginService.post({ username, password })
 
-    if (success) {
+    if (true) {
 
       message.success('登陆成功')
       setTimeout(() => {
         setAuthUser(`${username}`)
+        updateUserBookId(detail.bookPointer)
         this.props.history.push("/");
       }, 500)
 
@@ -98,6 +99,6 @@ export default connect(
   ({ users }) => ({
     users: Object.values(users)
   }),
-  { setAuthUser }
+  { setAuthUser, updateUserBookId }
 )(withRouter(LoginForm));
 
