@@ -44,7 +44,7 @@ class BookItemComponent extends React.Component {
                     <li key={id} onClick={(e) => this.handleClick(e, url, id)}>
                         <div className="book">
                             <div className="book-top">
-                                <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url(${cover})` }}></div>
+                                <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url(${cover})`, backgroundSize: '100%' }}></div>
                             </div>
                             <div className="book-title">{title}</div>
                             <div className="book-authors">{authors.join()}</div>

@@ -26,7 +26,7 @@ main.get('/list', async (request, response) => {
 
   const datas = readDir.filter(e => books.includes(e)).map((e, index) => ({
     url: index <= bookId ? `/books/${e}/index.html` : '',
-    cover: index <= bookId ? `/books/${e}/cover.jpeg` : 'logo.png',
+    cover: index <= bookId ? `/books/${e}/cover.jpeg` : 'lock.jpeg',
     title: e,
     id: index
   }))
