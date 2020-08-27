@@ -40,8 +40,11 @@ app.use('/_api2', proxy.createProxyMiddleware({
             proxyRes.on('data', function (data) {
                 data = data.toString('utf-8');
                 let _data = JSON.parse(data)
-                req.session.bookId = _data.detail.bookPointer
-                req.session.userType = _data.detail.userType
+                if (_data.detail) {
+                    req.session.bookId = _data.detail.bookPointer
+                    req.session.userType = _data.detail.userType
+                }
+
 
             });
         }

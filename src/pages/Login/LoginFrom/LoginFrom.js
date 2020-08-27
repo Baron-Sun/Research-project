@@ -29,8 +29,7 @@ class LoginForm extends Component {
 
     let { success, detail = {} } = await LoginService.post({ username, password })
 
-    if (true) {
-
+    if (success) {
       message.success('登陆成功')
       setTimeout(() => {
         setAuthUser(`${username}`)

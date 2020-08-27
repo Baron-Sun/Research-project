@@ -9,7 +9,6 @@ const main = express.Router()
 main.get('/list', async (request, response) => {
 
   let { bookId, userType } = request.session;
-  let books = config.userTypeMap[userType];
 
   let ret = {
     "success": true,
@@ -21,12 +20,14 @@ main.get('/list', async (request, response) => {
   const booksDir = path.resolve(__dirname, '..', 'build/books');
   var readDir = fs.readdirSync(booksDir);
 
+  let books = userType == 1 ? readDir : config.userTypeMap[userType];
+
   console.log('bookId', bookId);
   console.log('userType', userType);
 
   const datas = readDir.filter(e => books.includes(e)).map((e, index) => ({
-    url: index <= bookId ? `/books/${e}/index.html` : '',
-    cover: index <= bookId ? `/books/${e}/cover.jpeg` : 'lock.jpeg',
+    url: userType == 1 || index <= bookId ? `/books/${e}/index.html` : '',
+    cover: userType == 1 || index <= bookId ? `/books/${e}/cover.jpeg` : 'lock.jpeg',
     title: e,
     id: index
   }))
