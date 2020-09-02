@@ -51,7 +51,7 @@ class IframePage extends Component {
         style={{
           paddingLeft: 10,
           width: 1024,
-          height: 798,
+          height: 768,
           WebkitOverflowScrolling: 'touch',
           // overflow-y: scroll;
           // pointerEvents: 'none'
