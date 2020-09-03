@@ -89,13 +89,15 @@ class BooksApp extends React.Component {
                 </Modal>
                 <Modal
                     title={null}
+                    width={'70%'}
                     visible={videoVisible}
                     onCancel={this.videoHandleCancel}
                     footer={null}
+                    destroyOnClose={true}
                 >
-                    <div style={{ width: 200, height: 200 }}>
-                        video
-                    </div>
+                    <video style={{ width: '100%', height: '100%', outline: 'unset' }} controls>
+                        <source src='/video.mp4' type="video/mp4" />
+                    </video>
                 </Modal>
             </div>
         )

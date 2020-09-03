@@ -1,5 +1,5 @@
 let config = {
-    port: 3000,
+    port: 8001,
     url: 'http://localhost',
     api2: 'http://101.37.78.56:9090',
     userTypeMap: {

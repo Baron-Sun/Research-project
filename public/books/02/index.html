@@ -133,6 +133,20 @@
 				request.send();
 			}
 
+			// closeBook   
+			function closeBook() {
+
+				var reqUrl = `/_api2/read/closeBook`;
+				var request = new XMLHttpRequest();
+				request.open('GET', reqUrl);
+				request.onreadystatechange = function () {
+					if (request.readyState == 4 && request.status == 200) {
+						console.log('closeBook_成功')
+					}
+				};
+				request.send();
+			}
+
 			document.querySelector('#div_Slide').addEventListener('click', (e) => {
 				let parentNodeId = e.target.parentNode.id || ''
 				let currentId = e.target.id || ''
@@ -167,6 +181,7 @@
 							if (ariaLabel && ariaLabel.includes('您可以点击网页右上方回到主菜单重新阅读或解锁下一版本')) {
 								console.log('进入最后一页');
 								unlockBook()
+								closeBook()
 								break;
 							}
 						}
