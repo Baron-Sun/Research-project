@@ -94,7 +94,12 @@
 
 			cpInit();
 			initialized = true;
+
 			//  ----------------复制范围--------------------------
+
+			const isMobile = /Android|iPad|iPhone/i.test(navigator.userAgent)
+			const clickEvent = isMobile ? 'touchstart' : 'click'
+
 			// 热点记录   
 			function saveHotspot(params) {
 				let username = window.location.search ? window.location.search.split('?')[1].split('=')[1] : ''
@@ -146,7 +151,8 @@
 				request.send();
 			}
 
-			document.querySelector('#div_Slide').addEventListener('click', (e) => {
+			document.querySelector('#div_Slide').addEventListener(clickEvent, (e) => {
+				console.log('e', e)
 				let parentNodeId = e.target.parentNode.id || ''
 				let currentId = e.target.id || ''
 				let className = e.target.className || ''
