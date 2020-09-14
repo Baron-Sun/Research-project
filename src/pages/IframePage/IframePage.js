@@ -44,6 +44,7 @@ class IframePage extends Component {
     // 打平之后的菜单
     const query = this.props.location.query || {};
     const { url, bookId } = query;
+    console.log(' this.props.location', this.props.location)
     const { authUser } = this.props;
     return (
       <div

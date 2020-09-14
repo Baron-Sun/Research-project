@@ -4,7 +4,9 @@ var proxy = require('http-proxy-middleware');
 var bodyParser = require('body-parser')
 const config = require('./config.js');
 const session = require('express-session');
-// const cors = require('cors');
+const fs = require('fs');
+const path = require('path');
+
 
 // app.use(cors());
 app.use(bodyParser.json())
@@ -16,8 +18,10 @@ app.use(session({
     proxy: true
 }));
 
+
 //注册路由
 app.use(express.static('./build'));
+
 
 app.get('/', (req, res) => {
 
@@ -63,10 +67,16 @@ app.use('/_api2', proxy.createProxyMiddleware({
 }));
 
 
+
+
+
 const book = require('./routes/book')
 
 app.use('/book', book)
 
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', "index.html"));
+})
 
 var server = app.listen(config.port, function () {
     var host = server.address().address;

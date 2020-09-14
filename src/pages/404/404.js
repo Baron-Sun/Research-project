@@ -5,9 +5,9 @@ import { withRouter } from "react-router-dom";
 const Page404 = (props) => {
     return (
         <Result
-            status="404"
-            title="404"
-            subTitle="Sorry, the page you visited does not exist."
+            status="403"
+            title="403"
+            subTitle="Sorry, Need to log in again"
             extra={<Button type="primary" onClick={() => props.history.push('/')}>Back Home</Button>}
         />
     )

@@ -35,7 +35,7 @@ class BookItemComponent extends React.Component {
             <Fragment>
                 <Link to={
                     {
-                        pathname: 'iframe',
+                        pathname: `iframe/${id}`,
                         query: {
                             url: url,
                             bookId: id
