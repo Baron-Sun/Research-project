@@ -137,7 +137,7 @@
 				request.send();
 			}
 
-			// closeBook   
+			// 解锁book   
 			function closeBook() {
 
 				var reqUrl = `/_api2/read/closeBook`;
@@ -152,6 +152,7 @@
 			}
 
 			document.querySelector('#div_Slide').addEventListener(clickEvent, (e) => {
+				console.log('e', e)
 				let parentNodeId = e.target.parentNode.id || ''
 				let currentId = e.target.id || ''
 				let className = e.target.className || ''
