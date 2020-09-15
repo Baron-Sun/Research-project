@@ -168,6 +168,20 @@
 					}
 					saveHotspot(params)
 				}
+
+				// img 图片
+				console.log('parentNodeId', parentNodeId)
+				if (parentNodeId.includes('_quote_button_')) {
+					let page = parentNodeId.split('_caption_text')[0]
+					let keyword = e.target.ariaLabel
+					let params = {
+						hotspotType: 'quotes',
+						clickResult: '',
+						hotspotName: `${page}_${keyword}`
+					}
+					console.log('parentNodeId', parentNodeId)
+					// saveHotspot(params)
+				}
 				// button next
 				if (currentId.includes('_button_next')) {
 					let page = currentId.split('_button_next')[0]
