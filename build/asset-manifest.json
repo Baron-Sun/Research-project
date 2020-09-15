@@ -1,13 +1,13 @@
 {
   "files": {
     "index.css": "/static/css/index.cd966e83.chunk.css",
-    "index.js": "/static/js/index.926e065a.chunk.js",
-    "index.js.map": "/static/js/index.926e065a.chunk.js.map",
+    "index.js": "/static/js/index.4ce471ad.chunk.js",
+    "index.js.map": "/static/js/index.4ce471ad.chunk.js.map",
     "runtime-index.js": "/static/js/runtime-index.58bdfcc0.js",
     "runtime-index.js.map": "/static/js/runtime-index.58bdfcc0.js.map",
     "static/css/2.42ec2a3e.chunk.css": "/static/css/2.42ec2a3e.chunk.css",
-    "static/js/2.a19bd738.chunk.js": "/static/js/2.a19bd738.chunk.js",
-    "static/js/2.a19bd738.chunk.js.map": "/static/js/2.a19bd738.chunk.js.map",
+    "static/js/2.ee72d868.chunk.js": "/static/js/2.ee72d868.chunk.js",
+    "static/js/2.ee72d868.chunk.js.map": "/static/js/2.ee72d868.chunk.js.map",
     "books/.DS_Store": "/books/.DS_Store",
     "books/01/ar/14562.mp3": "/books/01/ar/14562.mp3",
     "books/01/ar/14567.mp3": "/books/01/ar/14567.mp3",
@@ -2939,11 +2939,11 @@
     "books/06/index.html": "/books/06/index.html",
     "books/06/project.txt": "/books/06/project.txt",
     "index.html": "/index.html",
-    "precache-manifest.e427ac6a6aeaa54ad3e300f0b164e342.js": "/precache-manifest.e427ac6a6aeaa54ad3e300f0b164e342.js",
+    "precache-manifest.dc408a7e04f0c565b517c7e7e11b8b96.js": "/precache-manifest.dc408a7e04f0c565b517c7e7e11b8b96.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.42ec2a3e.chunk.css.map": "/static/css/2.42ec2a3e.chunk.css.map",
     "static/css/index.cd966e83.chunk.css.map": "/static/css/index.cd966e83.chunk.css.map",
-    "static/js/2.a19bd738.chunk.js.LICENSE.txt": "/static/js/2.a19bd738.chunk.js.LICENSE.txt",
+    "static/js/2.ee72d868.chunk.js.LICENSE.txt": "/static/js/2.ee72d868.chunk.js.LICENSE.txt",
     "static/media/image.png": "/static/media/image.dd608d34.png",
     "static/media/imageDropShadow.png": "/static/media/imageDropShadow.4a439170.png"
   },
@@ -2951,9 +2951,9 @@
     "index": [
       "static/js/runtime-index.58bdfcc0.js",
       "static/css/2.42ec2a3e.chunk.css",
-      "static/js/2.a19bd738.chunk.js",
+      "static/js/2.ee72d868.chunk.js",
       "static/css/index.cd966e83.chunk.css",
-      "static/js/index.926e065a.chunk.js"
+      "static/js/index.4ce471ad.chunk.js"
     ]
   }
 }

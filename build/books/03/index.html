@@ -167,6 +167,16 @@
 					}
 					saveHotspot(params)
 				}
+				// img 图片
+				if (currentId.includes('_quote_button_')) {
+					let params = {
+						hotspotType: 'quotes',
+						clickResult: '',
+						hotspotName: currentId
+					}
+					console.log('params', params)
+					saveHotspot(params)
+				}
 				// button next
 				if (currentId.includes('_button_next')) {
 					let page = currentId.split('_button_next')[0]
