@@ -33,6 +33,7 @@ class LoginForm extends Component {
       message.success('登陆成功')
       setTimeout(() => {
         setAuthUser(`${username}`)
+        sessionStorage.setItem('user_name', username)
         updateUserBookId(detail.bookPointer)
         this.props.history.push("/");
       }, 500)

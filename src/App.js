@@ -14,20 +14,31 @@ import { Fragment } from "react";
 import Footer from "./components/Foot";
 // import './App.css'
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      auth: sessionStorage.getItem('user_name'),
+    };
+  }
+
   componentDidMount() {
     //this.context.router.transitionTo('/');
     this.setState({ redirect: "/" });
   }
 
   render() {
-    const { authUser, loading } = this.props;
-    console.log('authUser', authUser)
+    const { loading, authUser } = this.props;
+    const { auth } = this.state;
+
+    const isLogin = (authUser || auth)
+
     return (
       <Router>
         <Fragment>
-          {authUser && <Nav />}
+          {isLogin && <Nav />}
           <div className="container flex-wrap flex-center flex-middle flex-direction-column">
-            {!authUser
+            {!isLogin
               ?
               <Route render={() => (
                 <Fragment>

@@ -37,7 +37,6 @@ class BookItemComponent extends React.Component {
                     {
                         pathname: `iframe/${id}`,
                         query: {
-                            url: url,
                             bookId: id
                         }
                     }}>
